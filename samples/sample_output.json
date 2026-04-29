@@ -1,0 +1,38 @@
+{
+  "events": [
+    {
+      "title": "Meet to discuss Q2 roadmap",
+      "date": "2026-05-05",
+      "time": "15:00",
+      "participants": ["me", "John"]
+    },
+    {
+      "title": "Retro review of the release R25",
+      "date": "2026-04-30",
+      "time": "10:00",
+      "participants": ["dev team"]
+    }
+  ],
+  "tasks": [
+    {
+      "task": "send the budget report",
+      "owner": "me",
+      "due": "2026-04-30"
+    },
+    {
+      "task": "send the Jira# for the PERF issue",
+      "owner": "me",
+      "due": ""
+    },
+    {
+      "task": "send it to him",
+      "owner": "me",
+      "due": ""
+    },
+    {
+      "task": "ask Piyush to talk to Aaron about this Jira",
+      "owner": "me",
+      "due": ""
+    }
+  ]
+}

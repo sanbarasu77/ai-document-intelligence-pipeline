@@ -1,0 +1,43 @@
+{
+  "Comment": "LLM document processing pipeline using Map-Reduce pattern",
+  "StartAt": "Preprocess",
+  "States": {
+    "Preprocess": {
+      "Type": "Task",
+      "Resource": "${PreprocessLambdaArn}",
+      "Next": "MapChunks"
+    },
+    "MapChunks": {
+      "Type": "Map",
+      "ItemsPath": "$.chunks",
+      "MaxConcurrency": 5,
+      "ResultPath": "$.results",
+      "Iterator": {
+        "StartAt": "AnalyzeChunk",
+        "States": {
+          "AnalyzeChunk": {
+            "Type": "Task",
+            "Resource": "${AnalyzeChunkLambdaArn}",
+            "Retry": [
+              {
+                "ErrorEquals": ["States.ALL"],
+                "IntervalSeconds": 2,
+                "MaxAttempts": 2,
+                "BackoffRate": 2.0
+              }
+            ],
+            "End": true
+          }
+        }
+      },
+      "Next": "Reduce"
+    },
+    "Reduce": {
+      "Type": "Task",
+      "Comment": "Aggregate results from all chunk analyses",
+      "Resource": "${ReduceLambdaArn}",
+      "InputPath": "$.results",
+      "End": true
+    }
+  }
+}

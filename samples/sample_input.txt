@@ -1,0 +1,14 @@
+Hi John,
+
+Let’s meet next Friday at 3 PM to discuss Q2 roadmap.
+
+Also remind me to send the budget report tomorrow.
+
+Shawn,
+
+Aaron asked us to send the Jira# for the PERF issue.
+Can you please send it?
+
+I will also ask Piyush to talk to Aaron about this Jira.
+
+Entire dev team should be available to conduct the retro review of the release R25, tomorrow morning at 10am PT.
