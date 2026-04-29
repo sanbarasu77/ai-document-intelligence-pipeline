@@ -12,6 +12,15 @@ Instead of sending the entire document to an LLM, the system uses a **Map-Reduce
 
 ---
 
+## What this project demonstrates
+
+- Distributed LLM processing using Map-Reduce pattern  
+- Parallel chunk processing using AWS Step Functions  
+- Structured extraction (tasks, events, participants)  
+- Real-world handling of temporal context and ambiguity  
+
+---
+
 ## Why This Matters
 
 Most LLM demos focus on single prompts.
