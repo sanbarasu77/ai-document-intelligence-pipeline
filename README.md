@@ -1,5 +1,7 @@
 # Agent-Ready LLM Document Intelligence Pipeline (Map-Reduce)
 
+Scalable LLM pipeline using AWS Step Functions, Map-Reduce architecture, and Amazon Bedrock for structured data extraction from unstructured documents.
+
 ## Overview
 
 Large Language Models are powerful — but real-world systems require more than a single prompt.
