@@ -215,6 +215,8 @@ Entire dev team should be available for retro review tomorrow at 10am.
 
 ---
 
+If you find this useful, consider starring ⭐ the repo.
+
 ## Author
 
 Anbarasu Samiappan
